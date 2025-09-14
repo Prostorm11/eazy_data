@@ -2,17 +2,7 @@ import "./pressable.css";
 
 import { ReactNode, MouseEventHandler } from "react";
 
-type PressableProps = {
-  onPress?: MouseEventHandler<HTMLDivElement>;
-  children: ReactNode;
-  padd?: string | number;
-  width?: string | number;
-  selector?: boolean;
-  pressed?: boolean;
-  background?: string;
-  height?: string | number;
-  radius?: string | number;
-};
+
 
 const Pressable = ({
   onPress,
@@ -24,7 +14,7 @@ const Pressable = ({
   background,
   height,
   radius,
-}: PressableProps) => {
+}) => {
   return (
     <div
       onClick={onPress}

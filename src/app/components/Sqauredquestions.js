@@ -2,15 +2,7 @@ import React from "react";
 import "./Squaredquestions.css";
 import Pressable from "./pressable";
 
-interface SqauredquestionsProps {
-  question: string;
-  options: string[];
-  nextQuestion: () => void;
-  prevQuestion: () => void;
-  action: (value: any) => void;
-  setSelectedOption: (option: string) => void;
-  selectedOption: string;
-}
+
 
 function Sqauredquestions({
   question,
@@ -20,8 +12,8 @@ function Sqauredquestions({
   action,
   setSelectedOption,
   selectedOption,
-}: SqauredquestionsProps) {
-  const handleChange = (event: { target: { value: any; }; }) => {
+}) {
+  const handleChange = (event) => {
     let newValue = event.target.value;
 
     // Check if the options are True/False

@@ -25,7 +25,7 @@ export default function LeftNavigator() {
 
   const logout = async () => {};
 
-  const handleSelection = (index: number, screen: React.SetStateAction<string>) => {
+  const handleSelection = (index, screen) => {
     setPressed((prev) => prev.map((_, i) => i === index));
     setSelectedScreen(screen);
   };

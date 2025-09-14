@@ -1,14 +1,9 @@
 import React from "react";
 import "./Fieldbox.css";
 
-interface FieldboxProps {
-  width: string | number;
-  placeholder?: string;
-  value: string | number;
-  onChange: React.ChangeEventHandler<HTMLInputElement>;
-}
 
-function Fieldbox({ width, placeholder, value, onChange }: FieldboxProps) {
+
+function Fieldbox({ width, placeholder, value, onChange }) {
   return (
     <div className="fieldbox" style={{ width: width }}>
       <input 

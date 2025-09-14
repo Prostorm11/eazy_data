@@ -2,16 +2,9 @@ import React from 'react';
 import "./DoctorInfo.css";
 import Pressable from './pressable';
 
-type DoctorInfoProps = {
-    source: string;
-    name: string;
-    age: number | string;
-    hospital: string;
-    speciality: string;
-    oncontact: () => void;
-};
 
-function DoctorInfo({ source, name, age, hospital, speciality, oncontact }: DoctorInfoProps) {
+
+function DoctorInfo({ source, name, age, hospital, speciality, oncontact }) {
    
     return (
         <div id='infobox'>

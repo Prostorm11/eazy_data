@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/pages/clients.js", "src/app/pages/dashboard.js", "src/app/pages/revenue.js", "src/app/pages/packages.js", "src/app/pages/profile.js", "src/app/pages/orders.js", "src/app/components/squredPressable.js", "src/app/components/squaredPressable.js", "src/app/components/Sqauredquestions.js", "src/app/components/pressable.js", "src/app/components/Fieldbox.js", "src/app/components/DoctorInfo.js", "src/app/pages/left_navigator.js"],
   "exclude": ["node_modules"]
 }
